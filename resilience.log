@@ -1,0 +1,751 @@
+2018-07-09 15:33:48.889  INFO [resilience,,,] 1478 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767: startup date [Mon Jul 09 15:33:48 IST 2018]; root of context hierarchy
+2018-07-09 15:33:49.273  INFO [resilience,,,] 1478 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 15:33:49.311  INFO [resilience,,,] 1478 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7dd74407] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 15:33:49.793  INFO [resilience,,,] 1478 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2018-07-09 15:33:50.735  INFO [resilience,,,] 1478 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=resilience, profiles=[dev], label=null, version=null, state=null
+2018-07-09 15:33:50.736  INFO [resilience,,,] 1478 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource {name='file:///Users/aravindviswanathan/Aravind/Development/workspaces/confsvr/src/main/resources/config/resilience/resilience-dev.yml'}, MapPropertySource {name='file:///Users/aravindviswanathan/Aravind/Development/workspaces/confsvr/src/main/resources/config/resilience/resilience.yml'}]]
+2018-07-09 15:33:50.803  INFO [resilience,,,] 1478 --- [main] c.r.ResiliencePatternsApplication        : The following profiles are active: dev
+2018-07-09 15:33:50.878  INFO [resilience,,,] 1478 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f89292e: startup date [Mon Jul 09 15:33:50 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767
+2018-07-09 15:33:52.037  INFO [resilience,,,] 1478 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=eecb0968-bbe2-3ca9-b877-25e8a323ba57
+2018-07-09 15:33:52.054  INFO [resilience,,,] 1478 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 15:33:52.383  INFO [resilience,,,] 1478 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7dd74407] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 15:33:52.850  INFO [resilience,,,] 1478 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2018-07-09 15:33:52.877  INFO [resilience,,,] 1478 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-09 15:33:52.878  INFO [resilience,,,] 1478 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-09 15:33:52.991  INFO [resilience,,,] 1478 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-09 15:33:52.992  INFO [resilience,,,] 1478 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2114 ms
+2018-07-09 15:33:53.323  INFO [resilience,,,] 1478 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-09 15:33:53.324  INFO [resilience,,,] 1478 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'traceFilter' to: [/*]
+2018-07-09 15:33:53.324  INFO [resilience,,,] 1478 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-09 15:33:53.324  INFO [resilience,,,] 1478 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-09 15:33:53.324  INFO [resilience,,,] 1478 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-09 15:33:53.325  INFO [resilience,,,] 1478 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-09 15:33:53.423  WARN [resilience,,,] 1478 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name '/user': Unsatisfied dependency expressed through field 'restTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-07-09 15:33:53.425  INFO [resilience,,,] 1478 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-07-09 15:33:53.448  INFO [resilience,,,] 1478 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-07-09 15:33:53.727 ERROR [resilience,,,] 1478 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field restTemplate in com.resilience.services.ExampleServices required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
+2018-07-09 15:34:53.653  INFO [resilience,,,] 1479 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767: startup date [Mon Jul 09 15:34:53 IST 2018]; root of context hierarchy
+2018-07-09 15:34:54.078  INFO [resilience,,,] 1479 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 15:34:54.119  INFO [resilience,,,] 1479 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7dd74407] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 15:34:54.474  INFO [resilience,,,] 1479 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2018-07-09 15:34:54.891  INFO [resilience,,,] 1479 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=resilience, profiles=[dev], label=null, version=null, state=null
+2018-07-09 15:34:54.892  INFO [resilience,,,] 1479 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource {name='file:///Users/aravindviswanathan/Aravind/Development/workspaces/confsvr/src/main/resources/config/resilience/resilience-dev.yml'}, MapPropertySource {name='file:///Users/aravindviswanathan/Aravind/Development/workspaces/confsvr/src/main/resources/config/resilience/resilience.yml'}]]
+2018-07-09 15:34:54.961  INFO [resilience,,,] 1479 --- [main] c.r.ResiliencePatternsApplication        : The following profiles are active: dev
+2018-07-09 15:34:54.996  INFO [resilience,,,] 1479 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f89292e: startup date [Mon Jul 09 15:34:54 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767
+2018-07-09 15:34:56.115  INFO [resilience,,,] 1479 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=90c2d942-c67e-341a-88dd-00936d0ab225
+2018-07-09 15:34:56.135  INFO [resilience,,,] 1479 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 15:34:56.496  INFO [resilience,,,] 1479 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7dd74407] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 15:34:56.997  INFO [resilience,,,] 1479 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2018-07-09 15:34:57.023  INFO [resilience,,,] 1479 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-09 15:34:57.024  INFO [resilience,,,] 1479 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-09 15:34:57.126  INFO [resilience,,,] 1479 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-09 15:34:57.127  INFO [resilience,,,] 1479 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2131 ms
+2018-07-09 15:34:57.469  INFO [resilience,,,] 1479 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-09 15:34:57.470  INFO [resilience,,,] 1479 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'traceFilter' to: [/*]
+2018-07-09 15:34:57.471  INFO [resilience,,,] 1479 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-09 15:34:57.471  INFO [resilience,,,] 1479 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-09 15:34:57.471  INFO [resilience,,,] 1479 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-09 15:34:57.471  INFO [resilience,,,] 1479 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-09 15:34:58.311  WARN [resilience,,,] 1479 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-07-09 15:34:58.312  INFO [resilience,,,] 1479 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-09 15:34:58.316  WARN [resilience,,,] 1479 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-07-09 15:34:58.316  INFO [resilience,,,] 1479 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-09 15:34:58.658  INFO [resilience,,,] 1479 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f89292e: startup date [Mon Jul 09 15:34:54 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767
+2018-07-09 15:34:58.767  INFO [resilience,,,] 1479 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list],methods=[GET],produces=[application/json]}" onto public com.fasterxml.jackson.databind.node.ObjectNode com.resilience.services.ExampleServices.getUsers() throws com.resilience.exception.UserException
+2018-07-09 15:34:58.768  INFO [resilience,,,] 1479 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listByProxy],methods=[GET],produces=[application/json]}" onto public com.fasterxml.jackson.databind.node.ObjectNode com.resilience.services.ExampleServices.getUsersThroughProxy()
+2018-07-09 15:34:58.775  INFO [resilience,,,] 1479 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-09 15:34:58.776  INFO [resilience,,,] 1479 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-09 15:34:58.860  INFO [resilience,,,] 1479 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Mapped URL path [/user] onto handler '/user'
+2018-07-09 15:34:58.883  INFO [resilience,,,] 1479 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 15:34:58.884  INFO [resilience,,,] 1479 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 15:34:58.939  INFO [resilience,,,] 1479 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in resilienceExceptionAdvice
+2018-07-09 15:34:59.015  INFO [resilience,,,] 1479 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 15:35:00.015  INFO [resilience,,,] 1479 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-07-09 15:35:00.086  WARN [resilience,,,] 1479 --- [main] arterDeprecationWarningAutoConfiguration : spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
+2018-07-09 15:35:00.166  INFO [resilience,,,] 1479 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-09 15:35:00.182  INFO [resilience,,,] 1479 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-07-09 15:35:00.183  INFO [resilience,,,] 1479 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-07-09 15:35:00.186  INFO [resilience,,,] 1479 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-07-09 15:35:00.189  INFO [resilience,,,] 1479 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-07-09 15:35:00.208  INFO [resilience,,,] 1479 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-07-09 15:35:00.221  INFO [resilience,,,] 1479 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=6f89292e,type=ConfigurationPropertiesRebinder]
+2018-07-09 15:35:00.250  INFO [resilience,,,] 1479 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-07-09 15:35:00.287  INFO [resilience,,,] 1479 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-07-09 15:35:00.335  INFO [resilience,,,] 1479 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-07-09 15:35:00.376  INFO [resilience,,,] 1479 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-07-09 15:35:00.376  INFO [resilience,,,] 1479 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-07-09 15:35:00.491  INFO [resilience,,,] 1479 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-07-09 15:35:00.491  INFO [resilience,,,] 1479 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-07-09 15:35:00.630  INFO [resilience,,,] 1479 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 15:35:00.648  INFO [resilience,,,] 1479 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-07-09 15:35:00.648  INFO [resilience,,,] 1479 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-07-09 15:35:00.649  INFO [resilience,,,] 1479 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-07-09 15:35:00.649  INFO [resilience,,,] 1479 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-07-09 15:35:00.649  INFO [resilience,,,] 1479 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-07-09 15:35:00.649  INFO [resilience,,,] 1479 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-07-09 15:35:00.649  INFO [resilience,,,] 1479 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-07-09 15:35:00.761  INFO [resilience,,,] 1479 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-07-09 15:35:00.763  INFO [resilience,,,] 1479 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-07-09 15:35:00.766  INFO [resilience,,,] 1479 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-07-09 15:35:00.772  INFO [resilience,,,] 1479 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1531130700771 with initial instances count: 1
+2018-07-09 15:35:00.792  INFO [resilience,,,] 1479 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application resilience with eureka with status UP
+2018-07-09 15:35:00.793  INFO [resilience,,,] 1479 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1531130700793, current=UP, previous=STARTING]
+2018-07-09 15:35:00.794  INFO [resilience,,,] 1479 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESILIENCE/172.17.1.40:resilience:9090: registering service...
+2018-07-09 15:35:00.831  INFO [resilience,,,] 1479 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESILIENCE/172.17.1.40:resilience:9090 - registration status: 204
+2018-07-09 15:35:00.876  INFO [resilience,,,] 1479 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9090 (http)
+2018-07-09 15:35:00.879  INFO [resilience,,,] 1479 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9090
+2018-07-09 15:35:00.897  INFO [resilience,,,] 1479 --- [main] c.r.ResiliencePatternsApplication        : Started ResiliencePatternsApplication in 7.913 seconds (JVM running for 9.889)
+2018-07-09 15:35:40.797  INFO [resilience,,,] 1479 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-09 15:35:40.812  INFO [resilience,,,] 1479 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-09 15:35:40.855  INFO [resilience,,,] 1479 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
+2018-07-09 15:37:07.309  INFO [resilience,,,] 1479 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-07-09 15:37:07.316  INFO [resilience,,,] 1479 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f89292e: startup date [Mon Jul 09 15:34:54 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767
+2018-07-09 15:37:07.320  INFO [resilience,,,] 1479 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application resilience with eureka with status DOWN
+2018-07-09 15:37:07.320  WARN [resilience,,,] 1479 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1531130827320, current=DOWN, previous=UP]
+2018-07-09 15:37:07.321  INFO [resilience,,,] 1479 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESILIENCE/172.17.1.40:resilience:9090: registering service...
+2018-07-09 15:37:07.331  INFO [resilience,,,] 1479 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-07-09 15:37:07.334  INFO [resilience,,,] 1479 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-09 15:37:07.335  INFO [resilience,,,] 1479 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-07-09 15:37:07.362  INFO [resilience,,,] 1479 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-07-09 15:37:07.369  WARN [resilience,,,] 1479 --- [RMI TCP Connection(2)-127.0.0.1] .s.c.a.CommonAnnotationBeanPostProcessor : Invocation of destroy method failed on bean with name 'scopedTarget.eurekaClient': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2018-07-09 15:37:07.399  INFO [resilience,,,] 1479 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESILIENCE/172.17.1.40:resilience:9090 - registration status: 204
+2018-07-09 15:37:07.435  INFO [resilience,,,] 1479 --- [RMI TCP Connection(2)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-07-09 15:37:07.441  INFO [resilience,,,] 1479 --- [localhost-startStop-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-07-09 15:37:15.840  INFO [resilience,,,] 1481 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767: startup date [Mon Jul 09 15:37:15 IST 2018]; root of context hierarchy
+2018-07-09 15:37:16.202  INFO [resilience,,,] 1481 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 15:37:16.291  INFO [resilience,,,] 1481 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a56ea52d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 15:37:16.688  INFO [resilience,,,] 1481 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2018-07-09 15:37:17.143  INFO [resilience,,,] 1481 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=resilience, profiles=[dev], label=null, version=null, state=null
+2018-07-09 15:37:17.144  INFO [resilience,,,] 1481 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource {name='file:///Users/aravindviswanathan/Aravind/Development/workspaces/confsvr/src/main/resources/config/resilience/resilience-dev.yml'}, MapPropertySource {name='file:///Users/aravindviswanathan/Aravind/Development/workspaces/confsvr/src/main/resources/config/resilience/resilience.yml'}]]
+2018-07-09 15:37:17.191  INFO [resilience,,,] 1481 --- [main] c.r.ResiliencePatternsApplication        : The following profiles are active: dev
+2018-07-09 15:37:17.221  INFO [resilience,,,] 1481 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20749d9: startup date [Mon Jul 09 15:37:17 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767
+2018-07-09 15:37:18.147  INFO [resilience,,,] 1481 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0703df25-3144-3d1d-be3a-21e39c19d6bb
+2018-07-09 15:37:18.165  INFO [resilience,,,] 1481 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 15:37:18.556  INFO [resilience,,,] 1481 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a56ea52d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 15:37:19.004  INFO [resilience,,,] 1481 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2018-07-09 15:37:19.031  INFO [resilience,,,] 1481 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-09 15:37:19.031  INFO [resilience,,,] 1481 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-09 15:37:19.130  INFO [resilience,,,] 1481 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-09 15:37:19.131  INFO [resilience,,,] 1481 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1910 ms
+2018-07-09 15:37:19.462  INFO [resilience,,,] 1481 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-09 15:37:19.463  INFO [resilience,,,] 1481 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'traceFilter' to: [/*]
+2018-07-09 15:37:19.464  INFO [resilience,,,] 1481 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-09 15:37:19.464  INFO [resilience,,,] 1481 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-09 15:37:19.464  INFO [resilience,,,] 1481 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-09 15:37:19.466  INFO [resilience,,,] 1481 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-09 15:37:20.305  WARN [resilience,,,] 1481 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-07-09 15:37:20.305  INFO [resilience,,,] 1481 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-09 15:37:20.310  WARN [resilience,,,] 1481 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-07-09 15:37:20.310  INFO [resilience,,,] 1481 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-09 15:37:20.738  INFO [resilience,,,] 1481 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20749d9: startup date [Mon Jul 09 15:37:17 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767
+2018-07-09 15:37:20.871  INFO [resilience,,,] 1481 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list],methods=[GET],produces=[application/json]}" onto public com.fasterxml.jackson.databind.node.ObjectNode com.resilience.services.ExampleServices.getUsers() throws com.resilience.exception.UserException
+2018-07-09 15:37:20.872  INFO [resilience,,,] 1481 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listByProxy],methods=[GET],produces=[application/json]}" onto public com.fasterxml.jackson.databind.node.ObjectNode com.resilience.services.ExampleServices.getUsersThroughProxy()
+2018-07-09 15:37:20.878  INFO [resilience,,,] 1481 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-09 15:37:20.879  INFO [resilience,,,] 1481 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-09 15:37:20.980  INFO [resilience,,,] 1481 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 15:37:20.980  INFO [resilience,,,] 1481 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 15:37:21.027  INFO [resilience,,,] 1481 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in resilienceExceptionAdvice
+2018-07-09 15:37:21.094  INFO [resilience,,,] 1481 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 15:37:22.043  INFO [resilience,,,] 1481 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-07-09 15:37:22.087  WARN [resilience,,,] 1481 --- [main] arterDeprecationWarningAutoConfiguration : spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
+2018-07-09 15:37:22.161  INFO [resilience,,,] 1481 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-09 15:37:22.176  INFO [resilience,,,] 1481 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-07-09 15:37:22.177  INFO [resilience,,,] 1481 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-07-09 15:37:22.180  INFO [resilience,,,] 1481 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-07-09 15:37:22.185  INFO [resilience,,,] 1481 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-07-09 15:37:22.200  INFO [resilience,,,] 1481 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-07-09 15:37:22.211  INFO [resilience,,,] 1481 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=20749d9,type=ConfigurationPropertiesRebinder]
+2018-07-09 15:37:22.238  INFO [resilience,,,] 1481 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-07-09 15:37:22.254  INFO [resilience,,,] 1481 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-07-09 15:37:22.295  INFO [resilience,,,] 1481 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-07-09 15:37:22.341  INFO [resilience,,,] 1481 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-07-09 15:37:22.342  INFO [resilience,,,] 1481 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-07-09 15:37:22.446  INFO [resilience,,,] 1481 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-07-09 15:37:22.447  INFO [resilience,,,] 1481 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-07-09 15:37:22.589  INFO [resilience,,,] 1481 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 15:37:22.609  INFO [resilience,,,] 1481 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-07-09 15:37:22.609  INFO [resilience,,,] 1481 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-07-09 15:37:22.609  INFO [resilience,,,] 1481 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-07-09 15:37:22.609  INFO [resilience,,,] 1481 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-07-09 15:37:22.609  INFO [resilience,,,] 1481 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-07-09 15:37:22.610  INFO [resilience,,,] 1481 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-07-09 15:37:22.610  INFO [resilience,,,] 1481 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-07-09 15:37:22.753  INFO [resilience,,,] 1481 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-07-09 15:37:22.757  INFO [resilience,,,] 1481 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-07-09 15:37:22.761  INFO [resilience,,,] 1481 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-07-09 15:37:22.764  INFO [resilience,,,] 1481 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1531130842764 with initial instances count: 2
+2018-07-09 15:37:22.782  INFO [resilience,,,] 1481 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application resilience with eureka with status UP
+2018-07-09 15:37:22.783  INFO [resilience,,,] 1481 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1531130842783, current=UP, previous=STARTING]
+2018-07-09 15:37:22.785  INFO [resilience,,,] 1481 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESILIENCE/172.17.1.40:resilience:9090: registering service...
+2018-07-09 15:37:22.834  INFO [resilience,,,] 1481 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESILIENCE/172.17.1.40:resilience:9090 - registration status: 204
+2018-07-09 15:37:22.936  INFO [resilience,,,] 1481 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9090 (http)
+2018-07-09 15:37:22.937  INFO [resilience,,,] 1481 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9090
+2018-07-09 15:37:22.945  INFO [resilience,,,] 1481 --- [main] c.r.ResiliencePatternsApplication        : Started ResiliencePatternsApplication in 7.724 seconds (JVM running for 9.131)
+2018-07-09 15:37:27.252  INFO [resilience,,,] 1481 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-09 15:37:27.261  INFO [resilience,,,] 1481 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-09 15:37:27.307  INFO [resilience,,,] 1481 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 46 ms
+2018-07-09 15:37:51.825  INFO [resilience,,,] 1481 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-07-09 15:37:51.840  INFO [resilience,,,] 1481 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20749d9: startup date [Mon Jul 09 15:37:17 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767
+2018-07-09 15:37:51.848  INFO [resilience,,,] 1481 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application resilience with eureka with status DOWN
+2018-07-09 15:37:51.849  WARN [resilience,,,] 1481 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1531130871849, current=DOWN, previous=UP]
+2018-07-09 15:37:51.854  INFO [resilience,,,] 1481 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-07-09 15:37:51.856  INFO [resilience,,,] 1481 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-09 15:37:51.857  INFO [resilience,,,] 1481 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESILIENCE/172.17.1.40:resilience:9090: registering service...
+2018-07-09 15:37:51.859  INFO [resilience,,,] 1481 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-07-09 15:37:51.870  INFO [resilience,,,] 1481 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-07-09 15:37:51.874  WARN [resilience,,,] 1481 --- [RMI TCP Connection(2)-127.0.0.1] .s.c.a.CommonAnnotationBeanPostProcessor : Invocation of destroy method failed on bean with name 'scopedTarget.eurekaClient': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2018-07-09 15:37:51.922  INFO [resilience,,,] 1481 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESILIENCE/172.17.1.40:resilience:9090 - registration status: 204
+2018-07-09 15:37:51.938  INFO [resilience,,,] 1481 --- [RMI TCP Connection(2)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-07-09 15:37:51.942  INFO [resilience,,,] 1481 --- [localhost-startStop-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-07-09 15:37:51.967  WARN [resilience,,,] 1481 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxScheduledExecutorPool-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:37:51.969  WARN [resilience,,,] 1481 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxScheduledExecutorPool-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:37:51.969  WARN [resilience,,,] 1481 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:37:51.970  WARN [resilience,,,] 1481 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxComputationScheduler-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:38:00.130  INFO [resilience,,,] 1482 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767: startup date [Mon Jul 09 15:38:00 IST 2018]; root of context hierarchy
+2018-07-09 15:38:00.561  INFO [resilience,,,] 1482 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 15:38:00.599  INFO [resilience,,,] 1482 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7dd74407] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 15:38:01.013  INFO [resilience,,,] 1482 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2018-07-09 15:38:01.478  INFO [resilience,,,] 1482 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=resilience, profiles=[dev], label=null, version=null, state=null
+2018-07-09 15:38:01.479  INFO [resilience,,,] 1482 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource {name='file:///Users/aravindviswanathan/Aravind/Development/workspaces/confsvr/src/main/resources/config/resilience/resilience-dev.yml'}, MapPropertySource {name='file:///Users/aravindviswanathan/Aravind/Development/workspaces/confsvr/src/main/resources/config/resilience/resilience.yml'}]]
+2018-07-09 15:38:01.531  INFO [resilience,,,] 1482 --- [main] c.r.ResiliencePatternsApplication        : The following profiles are active: dev
+2018-07-09 15:38:01.551  INFO [resilience,,,] 1482 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f89292e: startup date [Mon Jul 09 15:38:01 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767
+2018-07-09 15:38:02.845  INFO [resilience,,,] 1482 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0703df25-3144-3d1d-be3a-21e39c19d6bb
+2018-07-09 15:38:02.874  INFO [resilience,,,] 1482 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 15:38:03.371  INFO [resilience,,,] 1482 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7dd74407] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 15:38:03.769  INFO [resilience,,,] 1482 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2018-07-09 15:38:03.793  INFO [resilience,,,] 1482 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-09 15:38:03.794  INFO [resilience,,,] 1482 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-09 15:38:03.909  INFO [resilience,,,] 1482 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-09 15:38:03.910  INFO [resilience,,,] 1482 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2360 ms
+2018-07-09 15:38:04.265  INFO [resilience,,,] 1482 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-09 15:38:04.265  INFO [resilience,,,] 1482 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'traceFilter' to: [/*]
+2018-07-09 15:38:04.266  INFO [resilience,,,] 1482 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-09 15:38:04.266  INFO [resilience,,,] 1482 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-09 15:38:04.267  INFO [resilience,,,] 1482 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-09 15:38:04.267  INFO [resilience,,,] 1482 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-09 15:38:05.154  WARN [resilience,,,] 1482 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-07-09 15:38:05.154  INFO [resilience,,,] 1482 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-09 15:38:05.158  WARN [resilience,,,] 1482 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-07-09 15:38:05.159  INFO [resilience,,,] 1482 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-09 15:38:05.458  INFO [resilience,,,] 1482 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f89292e: startup date [Mon Jul 09 15:38:01 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767
+2018-07-09 15:38:05.548  INFO [resilience,,,] 1482 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/list],methods=[GET],produces=[application/json]}" onto public com.fasterxml.jackson.databind.node.ObjectNode com.resilience.services.ExampleServices.getUsers() throws com.resilience.exception.UserException
+2018-07-09 15:38:05.549  INFO [resilience,,,] 1482 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/listByProxy],methods=[GET],produces=[application/json]}" onto public com.fasterxml.jackson.databind.node.ObjectNode com.resilience.services.ExampleServices.getUsersThroughProxy()
+2018-07-09 15:38:05.554  INFO [resilience,,,] 1482 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-09 15:38:05.555  INFO [resilience,,,] 1482 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-09 15:38:05.641  INFO [resilience,,,] 1482 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 15:38:05.642  INFO [resilience,,,] 1482 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 15:38:05.682  INFO [resilience,,,] 1482 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in resilienceExceptionAdvice
+2018-07-09 15:38:05.738  INFO [resilience,,,] 1482 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 15:38:06.799  INFO [resilience,,,] 1482 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-07-09 15:38:06.843  WARN [resilience,,,] 1482 --- [main] arterDeprecationWarningAutoConfiguration : spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
+2018-07-09 15:38:06.952  INFO [resilience,,,] 1482 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-09 15:38:06.970  INFO [resilience,,,] 1482 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-07-09 15:38:06.972  INFO [resilience,,,] 1482 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-07-09 15:38:06.976  INFO [resilience,,,] 1482 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-07-09 15:38:06.979  INFO [resilience,,,] 1482 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-07-09 15:38:06.998  INFO [resilience,,,] 1482 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-07-09 15:38:07.010  INFO [resilience,,,] 1482 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=6f89292e,type=ConfigurationPropertiesRebinder]
+2018-07-09 15:38:07.035  INFO [resilience,,,] 1482 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-07-09 15:38:07.054  INFO [resilience,,,] 1482 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-07-09 15:38:07.096  INFO [resilience,,,] 1482 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-07-09 15:38:07.141  INFO [resilience,,,] 1482 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-07-09 15:38:07.141  INFO [resilience,,,] 1482 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-07-09 15:38:07.261  INFO [resilience,,,] 1482 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-07-09 15:38:07.261  INFO [resilience,,,] 1482 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-07-09 15:38:07.417  INFO [resilience,,,] 1482 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 15:38:07.434  INFO [resilience,,,] 1482 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-07-09 15:38:07.434  INFO [resilience,,,] 1482 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-07-09 15:38:07.434  INFO [resilience,,,] 1482 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-07-09 15:38:07.435  INFO [resilience,,,] 1482 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-07-09 15:38:07.435  INFO [resilience,,,] 1482 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-07-09 15:38:07.435  INFO [resilience,,,] 1482 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-07-09 15:38:07.435  INFO [resilience,,,] 1482 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-07-09 15:38:07.596  INFO [resilience,,,] 1482 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-07-09 15:38:07.598  INFO [resilience,,,] 1482 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-07-09 15:38:07.602  INFO [resilience,,,] 1482 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-07-09 15:38:07.605  INFO [resilience,,,] 1482 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1531130887605 with initial instances count: 2
+2018-07-09 15:38:07.626  INFO [resilience,,,] 1482 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application resilience with eureka with status UP
+2018-07-09 15:38:07.627  INFO [resilience,,,] 1482 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1531130887627, current=UP, previous=STARTING]
+2018-07-09 15:38:07.629  INFO [resilience,,,] 1482 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESILIENCE/172.17.1.40:resilience:9090: registering service...
+2018-07-09 15:38:07.673  INFO [resilience,,,] 1482 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESILIENCE/172.17.1.40:resilience:9090 - registration status: 204
+2018-07-09 15:38:07.763  INFO [resilience,,,] 1482 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9090 (http)
+2018-07-09 15:38:07.765  INFO [resilience,,,] 1482 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9090
+2018-07-09 15:38:07.773  INFO [resilience,,,] 1482 --- [main] c.r.ResiliencePatternsApplication        : Started ResiliencePatternsApplication in 8.341 seconds (JVM running for 9.48)
+2018-07-09 15:38:18.290  INFO [resilience,,,] 1482 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-09 15:38:18.311  INFO [resilience,,,] 1482 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-09 15:38:18.368  INFO [resilience,,,] 1482 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 57 ms
+2018-07-09 15:40:04.653  INFO [resilience,f423f402e7426761,c8aabfad82552449,false] 1482 --- [http-nio-9090-exec-9] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@22c177ce: startup date [Mon Jul 09 15:40:04 IST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f89292e
+2018-07-09 15:40:04.765  INFO [resilience,f423f402e7426761,c8aabfad82552449,false] 1482 --- [http-nio-9090-exec-9] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 15:40:05.003  INFO [resilience,f423f402e7426761,c8aabfad82552449,false] 1482 --- [http-nio-9090-exec-9] c.netflix.config.ChainedDynamicProperty  : Flipping property: resilienceApp.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-07-09 15:40:05.024  INFO [resilience,f423f402e7426761,c8aabfad82552449,false] 1482 --- [http-nio-9090-exec-9] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-resilienceApp
+2018-07-09 15:40:05.055  INFO [resilience,f423f402e7426761,c8aabfad82552449,false] 1482 --- [http-nio-9090-exec-9] c.netflix.loadbalancer.BaseLoadBalancer  : Client: resilienceApp instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=resilienceApp,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2018-07-09 15:40:05.063  INFO [resilience,f423f402e7426761,c8aabfad82552449,false] 1482 --- [http-nio-9090-exec-9] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2018-07-09 15:40:05.066  INFO [resilience,f423f402e7426761,c8aabfad82552449,false] 1482 --- [http-nio-9090-exec-9] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client resilienceApp initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=resilienceApp,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@2f692ca4
+2018-07-09 15:40:24.085  INFO [resilience,,,] 1482 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-07-09 15:40:24.100  INFO [resilience,,,] 1482 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f89292e: startup date [Mon Jul 09 15:38:01 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767
+2018-07-09 15:40:24.102  INFO [resilience,,,] 1482 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application resilience with eureka with status DOWN
+2018-07-09 15:40:24.103  WARN [resilience,,,] 1482 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1531131024103, current=DOWN, previous=UP]
+2018-07-09 15:40:24.103  INFO [resilience,,,] 1482 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESILIENCE/172.17.1.40:resilience:9090: registering service...
+2018-07-09 15:40:24.106  INFO [resilience,,,] 1482 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-07-09 15:40:24.108  INFO [resilience,,,] 1482 --- [RMI TCP Connection(2)-127.0.0.1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@22c177ce: startup date [Mon Jul 09 15:40:04 IST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f89292e
+2018-07-09 15:40:24.112  INFO [resilience,,,] 1482 --- [RMI TCP Connection(2)-127.0.0.1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook removed for: NFLoadBalancer-PingTimer-resilienceApp
+2018-07-09 15:40:24.115  INFO [resilience,,,] 1482 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-09 15:40:24.116  INFO [resilience,,,] 1482 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-07-09 15:40:24.125  INFO [resilience,,,] 1482 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-07-09 15:40:24.129  WARN [resilience,,,] 1482 --- [RMI TCP Connection(2)-127.0.0.1] .s.c.a.CommonAnnotationBeanPostProcessor : Invocation of destroy method failed on bean with name 'scopedTarget.eurekaClient': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2018-07-09 15:40:24.174  INFO [resilience,,,] 1482 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESILIENCE/172.17.1.40:resilience:9090 - registration status: 204
+2018-07-09 15:40:24.184  INFO [resilience,,,] 1482 --- [RMI TCP Connection(2)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-07-09 15:40:24.188  INFO [resilience,,,] 1482 --- [localhost-startStop-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-07-09 15:40:24.198  WARN [resilience,,,] 1482 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxScheduledExecutorPool-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:40:24.199  WARN [resilience,,,] 1482 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxScheduledExecutorPool-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:40:24.199  WARN [resilience,,,] 1482 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:40:24.200  WARN [resilience,,,] 1482 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxComputationScheduler-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:40:24.201  WARN [resilience,,,] 1482 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:40:24.202  WARN [resilience,,,] 1482 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2075)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:40:24.215  INFO [resilience,,,] 1482 --- [Thread-9] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
+2018-07-09 15:40:44.802  INFO [resilience,,,] 1483 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767: startup date [Mon Jul 09 15:40:44 IST 2018]; root of context hierarchy
+2018-07-09 15:40:45.192  INFO [resilience,,,] 1483 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 15:40:45.237  INFO [resilience,,,] 1483 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7dd74407] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 15:40:45.644  INFO [resilience,,,] 1483 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2018-07-09 15:40:46.021  INFO [resilience,,,] 1483 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=resilience, profiles=[dev], label=null, version=null, state=null
+2018-07-09 15:40:46.022  INFO [resilience,,,] 1483 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource {name='file:///Users/aravindviswanathan/Aravind/Development/workspaces/confsvr/src/main/resources/config/resilience/resilience-dev.yml'}, MapPropertySource {name='file:///Users/aravindviswanathan/Aravind/Development/workspaces/confsvr/src/main/resources/config/resilience/resilience.yml'}]]
+2018-07-09 15:40:46.069  INFO [resilience,,,] 1483 --- [main] c.r.ResiliencePatternsApplication        : The following profiles are active: dev
+2018-07-09 15:40:46.102  INFO [resilience,,,] 1483 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f89292e: startup date [Mon Jul 09 15:40:46 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767
+2018-07-09 15:40:47.017  INFO [resilience,,,] 1483 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0703df25-3144-3d1d-be3a-21e39c19d6bb
+2018-07-09 15:40:47.034  INFO [resilience,,,] 1483 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 15:40:47.363  INFO [resilience,,,] 1483 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7dd74407] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 15:40:47.811  INFO [resilience,,,] 1483 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2018-07-09 15:40:47.840  INFO [resilience,,,] 1483 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-09 15:40:47.841  INFO [resilience,,,] 1483 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-09 15:40:47.957  INFO [resilience,,,] 1483 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-09 15:40:47.958  INFO [resilience,,,] 1483 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1856 ms
+2018-07-09 15:40:48.293  INFO [resilience,,,] 1483 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-09 15:40:48.294  INFO [resilience,,,] 1483 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'traceFilter' to: [/*]
+2018-07-09 15:40:48.295  INFO [resilience,,,] 1483 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-09 15:40:48.295  INFO [resilience,,,] 1483 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-09 15:40:48.296  INFO [resilience,,,] 1483 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-09 15:40:48.296  INFO [resilience,,,] 1483 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-09 15:40:49.190  WARN [resilience,,,] 1483 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-07-09 15:40:49.191  INFO [resilience,,,] 1483 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-09 15:40:49.195  WARN [resilience,,,] 1483 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-07-09 15:40:49.195  INFO [resilience,,,] 1483 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-09 15:40:49.532  INFO [resilience,,,] 1483 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f89292e: startup date [Mon Jul 09 15:40:46 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767
+2018-07-09 15:40:49.635  INFO [resilience,,,] 1483 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/list],methods=[GET],produces=[application/json]}" onto public com.fasterxml.jackson.databind.node.ObjectNode com.resilience.services.ExampleServices.getUsers() throws com.resilience.exception.UserException
+2018-07-09 15:40:49.637  INFO [resilience,,,] 1483 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/listByProxy],methods=[GET],produces=[application/json]}" onto public com.fasterxml.jackson.databind.node.ObjectNode com.resilience.services.ExampleServices.getUsersThroughProxy()
+2018-07-09 15:40:49.642  INFO [resilience,,,] 1483 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-09 15:40:49.644  INFO [resilience,,,] 1483 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-09 15:40:49.750  INFO [resilience,,,] 1483 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 15:40:49.751  INFO [resilience,,,] 1483 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 15:40:49.804  INFO [resilience,,,] 1483 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in resilienceExceptionAdvice
+2018-07-09 15:40:49.886  INFO [resilience,,,] 1483 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 15:40:50.931  INFO [resilience,,,] 1483 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-07-09 15:40:50.993  WARN [resilience,,,] 1483 --- [main] arterDeprecationWarningAutoConfiguration : spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
+2018-07-09 15:40:51.073  INFO [resilience,,,] 1483 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-09 15:40:51.088  INFO [resilience,,,] 1483 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-07-09 15:40:51.089  INFO [resilience,,,] 1483 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-07-09 15:40:51.092  INFO [resilience,,,] 1483 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-07-09 15:40:51.095  INFO [resilience,,,] 1483 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-07-09 15:40:51.110  INFO [resilience,,,] 1483 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-07-09 15:40:51.121  INFO [resilience,,,] 1483 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=6f89292e,type=ConfigurationPropertiesRebinder]
+2018-07-09 15:40:51.153  INFO [resilience,,,] 1483 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-07-09 15:40:51.185  INFO [resilience,,,] 1483 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-07-09 15:40:51.285  INFO [resilience,,,] 1483 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-07-09 15:40:51.342  INFO [resilience,,,] 1483 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-07-09 15:40:51.342  INFO [resilience,,,] 1483 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-07-09 15:40:51.481  INFO [resilience,,,] 1483 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-07-09 15:40:51.482  INFO [resilience,,,] 1483 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-07-09 15:40:51.632  INFO [resilience,,,] 1483 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 15:40:51.647  INFO [resilience,,,] 1483 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-07-09 15:40:51.648  INFO [resilience,,,] 1483 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-07-09 15:40:51.648  INFO [resilience,,,] 1483 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-07-09 15:40:51.648  INFO [resilience,,,] 1483 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-07-09 15:40:51.648  INFO [resilience,,,] 1483 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-07-09 15:40:51.648  INFO [resilience,,,] 1483 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-07-09 15:40:51.648  INFO [resilience,,,] 1483 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-07-09 15:40:51.748  INFO [resilience,,,] 1483 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-07-09 15:40:51.752  INFO [resilience,,,] 1483 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-07-09 15:40:51.755  INFO [resilience,,,] 1483 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-07-09 15:40:51.759  INFO [resilience,,,] 1483 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1531131051759 with initial instances count: 2
+2018-07-09 15:40:51.776  INFO [resilience,,,] 1483 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application resilience with eureka with status UP
+2018-07-09 15:40:51.778  INFO [resilience,,,] 1483 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1531131051778, current=UP, previous=STARTING]
+2018-07-09 15:40:51.779  INFO [resilience,,,] 1483 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESILIENCE/172.17.1.40:resilience:9090: registering service...
+2018-07-09 15:40:51.826  INFO [resilience,,,] 1483 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESILIENCE/172.17.1.40:resilience:9090 - registration status: 204
+2018-07-09 15:40:51.917  INFO [resilience,,,] 1483 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9090 (http)
+2018-07-09 15:40:51.919  INFO [resilience,,,] 1483 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9090
+2018-07-09 15:40:51.925  INFO [resilience,,,] 1483 --- [main] c.r.ResiliencePatternsApplication        : Started ResiliencePatternsApplication in 7.75 seconds (JVM running for 9.337)
+2018-07-09 15:41:28.389  INFO [resilience,,,] 1483 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-09 15:41:28.403  INFO [resilience,,,] 1483 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-09 15:41:28.454  INFO [resilience,,,] 1483 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 51 ms
+2018-07-09 15:41:37.178  INFO [resilience,8ec7cf22336cdb42,376d359533b7ac59,false] 1483 --- [http-nio-9090-exec-3] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@15d9b92c: startup date [Mon Jul 09 15:41:37 IST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f89292e
+2018-07-09 15:41:37.285  INFO [resilience,8ec7cf22336cdb42,376d359533b7ac59,false] 1483 --- [http-nio-9090-exec-3] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 15:41:37.498  INFO [resilience,8ec7cf22336cdb42,376d359533b7ac59,false] 1483 --- [http-nio-9090-exec-3] c.netflix.config.ChainedDynamicProperty  : Flipping property: resilience.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-07-09 15:41:37.520  INFO [resilience,8ec7cf22336cdb42,376d359533b7ac59,false] 1483 --- [http-nio-9090-exec-3] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-resilience
+2018-07-09 15:41:37.548  INFO [resilience,8ec7cf22336cdb42,376d359533b7ac59,false] 1483 --- [http-nio-9090-exec-3] c.netflix.loadbalancer.BaseLoadBalancer  : Client: resilience instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=resilience,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2018-07-09 15:41:37.556  INFO [resilience,8ec7cf22336cdb42,376d359533b7ac59,false] 1483 --- [http-nio-9090-exec-3] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2018-07-09 15:41:37.573  INFO [resilience,8ec7cf22336cdb42,376d359533b7ac59,false] 1483 --- [http-nio-9090-exec-3] c.netflix.config.ChainedDynamicProperty  : Flipping property: resilience.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-07-09 15:41:37.575  INFO [resilience,8ec7cf22336cdb42,376d359533b7ac59,false] 1483 --- [http-nio-9090-exec-3] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client resilience initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=resilience,current list of Servers=[172.17.1.40:9090],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:172.17.1.40:9090;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 05:30:00 IST 1970;	First connection made: Thu Jan 01 05:30:00 IST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@4b73adf
+2018-07-09 15:41:38.564  INFO [resilience,,,] 1483 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: resilience.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-07-09 15:42:15.500  INFO [resilience,,,] 1483 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-07-09 15:42:15.516  INFO [resilience,,,] 1483 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f89292e: startup date [Mon Jul 09 15:40:46 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767
+2018-07-09 15:42:15.517  INFO [resilience,,,] 1483 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application resilience with eureka with status DOWN
+2018-07-09 15:42:15.518  WARN [resilience,,,] 1483 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1531131135518, current=DOWN, previous=UP]
+2018-07-09 15:42:15.518  INFO [resilience,,,] 1483 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESILIENCE/172.17.1.40:resilience:9090: registering service...
+2018-07-09 15:42:15.521  INFO [resilience,,,] 1483 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-07-09 15:42:15.522  INFO [resilience,,,] 1483 --- [RMI TCP Connection(2)-127.0.0.1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@15d9b92c: startup date [Mon Jul 09 15:41:37 IST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f89292e
+2018-07-09 15:42:15.524  INFO [resilience,,,] 1483 --- [RMI TCP Connection(2)-127.0.0.1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook removed for: NFLoadBalancer-PingTimer-resilience
+2018-07-09 15:42:15.527  INFO [resilience,,,] 1483 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-09 15:42:15.527  INFO [resilience,,,] 1483 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-07-09 15:42:15.533  INFO [resilience,,,] 1483 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-07-09 15:42:15.538  WARN [resilience,,,] 1483 --- [RMI TCP Connection(2)-127.0.0.1] .s.c.a.CommonAnnotationBeanPostProcessor : Invocation of destroy method failed on bean with name 'scopedTarget.eurekaClient': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2018-07-09 15:42:15.555  INFO [resilience,,,] 1483 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESILIENCE/172.17.1.40:resilience:9090 - registration status: 204
+2018-07-09 15:42:15.595  INFO [resilience,,,] 1483 --- [RMI TCP Connection(2)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-07-09 15:42:15.599  INFO [resilience,,,] 1483 --- [localhost-startStop-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-07-09 15:42:15.610  WARN [resilience,,,] 1483 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxScheduledExecutorPool-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:42:15.612  WARN [resilience,,,] 1483 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxScheduledExecutorPool-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:42:15.613  WARN [resilience,,,] 1483 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:42:15.614  WARN [resilience,,,] 1483 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxComputationScheduler-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:42:15.614  WARN [resilience,,,] 1483 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:42:15.618  WARN [resilience,,,] 1483 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DataPublisher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:42:15.620  WARN [resilience,,,] 1483 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2075)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:42:15.664  INFO [resilience,,,] 1483 --- [Thread-9] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
+2018-07-09 15:42:23.646  INFO [resilience,,,] 1487 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767: startup date [Mon Jul 09 15:42:23 IST 2018]; root of context hierarchy
+2018-07-09 15:42:24.007  INFO [resilience,,,] 1487 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 15:42:24.049  INFO [resilience,,,] 1487 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7dd74407] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 15:42:24.392  INFO [resilience,,,] 1487 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2018-07-09 15:42:24.741  INFO [resilience,,,] 1487 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=resilience, profiles=[dev], label=null, version=null, state=null
+2018-07-09 15:42:24.742  INFO [resilience,,,] 1487 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource {name='file:///Users/aravindviswanathan/Aravind/Development/workspaces/confsvr/src/main/resources/config/resilience/resilience-dev.yml'}, MapPropertySource {name='file:///Users/aravindviswanathan/Aravind/Development/workspaces/confsvr/src/main/resources/config/resilience/resilience.yml'}]]
+2018-07-09 15:42:24.783  INFO [resilience,,,] 1487 --- [main] c.r.ResiliencePatternsApplication        : The following profiles are active: dev
+2018-07-09 15:42:24.800  INFO [resilience,,,] 1487 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f89292e: startup date [Mon Jul 09 15:42:24 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767
+2018-07-09 15:42:25.669  INFO [resilience,,,] 1487 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0703df25-3144-3d1d-be3a-21e39c19d6bb
+2018-07-09 15:42:25.686  INFO [resilience,,,] 1487 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 15:42:26.012  INFO [resilience,,,] 1487 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7dd74407] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 15:42:26.459  INFO [resilience,,,] 1487 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2018-07-09 15:42:26.484  INFO [resilience,,,] 1487 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-09 15:42:26.484  INFO [resilience,,,] 1487 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-09 15:42:26.583  INFO [resilience,,,] 1487 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-09 15:42:26.585  INFO [resilience,,,] 1487 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1786 ms
+2018-07-09 15:42:26.922  INFO [resilience,,,] 1487 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-09 15:42:26.923  INFO [resilience,,,] 1487 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'traceFilter' to: [/*]
+2018-07-09 15:42:26.923  INFO [resilience,,,] 1487 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-09 15:42:26.923  INFO [resilience,,,] 1487 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-09 15:42:26.923  INFO [resilience,,,] 1487 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-09 15:42:26.924  INFO [resilience,,,] 1487 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-09 15:42:27.870  WARN [resilience,,,] 1487 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-07-09 15:42:27.870  INFO [resilience,,,] 1487 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-09 15:42:27.874  WARN [resilience,,,] 1487 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-07-09 15:42:27.875  INFO [resilience,,,] 1487 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-09 15:42:28.156  INFO [resilience,,,] 1487 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f89292e: startup date [Mon Jul 09 15:42:24 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767
+2018-07-09 15:42:28.247  INFO [resilience,,,] 1487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/list],methods=[GET],produces=[application/json]}" onto public com.fasterxml.jackson.databind.node.ObjectNode com.resilience.services.ExampleServices.getUsers() throws com.resilience.exception.UserException
+2018-07-09 15:42:28.248  INFO [resilience,,,] 1487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/listByProxy],methods=[GET],produces=[application/json]}" onto public com.fasterxml.jackson.databind.node.ObjectNode com.resilience.services.ExampleServices.getUsersThroughProxy()
+2018-07-09 15:42:28.252  INFO [resilience,,,] 1487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-09 15:42:28.253  INFO [resilience,,,] 1487 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-09 15:42:28.382  INFO [resilience,,,] 1487 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 15:42:28.383  INFO [resilience,,,] 1487 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 15:42:28.422  INFO [resilience,,,] 1487 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in resilienceExceptionAdvice
+2018-07-09 15:42:28.473  INFO [resilience,,,] 1487 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 15:42:29.427  INFO [resilience,,,] 1487 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-07-09 15:42:29.471  WARN [resilience,,,] 1487 --- [main] arterDeprecationWarningAutoConfiguration : spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
+2018-07-09 15:42:29.543  INFO [resilience,,,] 1487 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-09 15:42:29.557  INFO [resilience,,,] 1487 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-07-09 15:42:29.558  INFO [resilience,,,] 1487 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-07-09 15:42:29.561  INFO [resilience,,,] 1487 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-07-09 15:42:29.564  INFO [resilience,,,] 1487 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-07-09 15:42:29.580  INFO [resilience,,,] 1487 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-07-09 15:42:29.591  INFO [resilience,,,] 1487 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=6f89292e,type=ConfigurationPropertiesRebinder]
+2018-07-09 15:42:29.618  INFO [resilience,,,] 1487 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-07-09 15:42:29.635  INFO [resilience,,,] 1487 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-07-09 15:42:29.669  INFO [resilience,,,] 1487 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-07-09 15:42:29.713  INFO [resilience,,,] 1487 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-07-09 15:42:29.713  INFO [resilience,,,] 1487 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-07-09 15:42:29.829  INFO [resilience,,,] 1487 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-07-09 15:42:29.829  INFO [resilience,,,] 1487 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-07-09 15:42:29.964  INFO [resilience,,,] 1487 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 15:42:29.981  INFO [resilience,,,] 1487 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-07-09 15:42:29.982  INFO [resilience,,,] 1487 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-07-09 15:42:29.982  INFO [resilience,,,] 1487 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-07-09 15:42:29.982  INFO [resilience,,,] 1487 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-07-09 15:42:29.982  INFO [resilience,,,] 1487 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-07-09 15:42:29.982  INFO [resilience,,,] 1487 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-07-09 15:42:29.982  INFO [resilience,,,] 1487 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-07-09 15:42:30.094  INFO [resilience,,,] 1487 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-07-09 15:42:30.097  INFO [resilience,,,] 1487 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-07-09 15:42:30.101  INFO [resilience,,,] 1487 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-07-09 15:42:30.105  INFO [resilience,,,] 1487 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1531131150104 with initial instances count: 2
+2018-07-09 15:42:30.121  INFO [resilience,,,] 1487 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application resilience with eureka with status UP
+2018-07-09 15:42:30.122  INFO [resilience,,,] 1487 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1531131150122, current=UP, previous=STARTING]
+2018-07-09 15:42:30.124  INFO [resilience,,,] 1487 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESILIENCE/172.17.1.40:resilience:9090: registering service...
+2018-07-09 15:42:30.178  INFO [resilience,,,] 1487 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESILIENCE/172.17.1.40:resilience:9090 - registration status: 204
+2018-07-09 15:42:30.211  INFO [resilience,,,] 1487 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9090 (http)
+2018-07-09 15:42:30.215  INFO [resilience,,,] 1487 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9090
+2018-07-09 15:42:30.229  INFO [resilience,,,] 1487 --- [main] c.r.ResiliencePatternsApplication        : Started ResiliencePatternsApplication in 7.233 seconds (JVM running for 8.304)
+2018-07-09 15:42:34.961  INFO [resilience,,,] 1487 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-09 15:42:34.962  INFO [resilience,,,] 1487 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-09 15:42:35.002  INFO [resilience,,,] 1487 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+2018-07-09 15:42:35.079  INFO [resilience,4dfda98a0265e46c,b2d3d190a26641d2,false] 1487 --- [http-nio-9090-exec-2] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4959dbe1: startup date [Mon Jul 09 15:42:35 IST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f89292e
+2018-07-09 15:42:35.162  INFO [resilience,4dfda98a0265e46c,b2d3d190a26641d2,false] 1487 --- [http-nio-9090-exec-2] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 15:42:35.416  INFO [resilience,4dfda98a0265e46c,b2d3d190a26641d2,false] 1487 --- [http-nio-9090-exec-2] c.netflix.config.ChainedDynamicProperty  : Flipping property: resilience.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-07-09 15:42:35.438  INFO [resilience,4dfda98a0265e46c,b2d3d190a26641d2,false] 1487 --- [http-nio-9090-exec-2] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-resilience
+2018-07-09 15:42:35.473  INFO [resilience,4dfda98a0265e46c,b2d3d190a26641d2,false] 1487 --- [http-nio-9090-exec-2] c.netflix.loadbalancer.BaseLoadBalancer  : Client: resilience instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=resilience,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2018-07-09 15:42:35.480  INFO [resilience,4dfda98a0265e46c,b2d3d190a26641d2,false] 1487 --- [http-nio-9090-exec-2] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2018-07-09 15:42:35.499  INFO [resilience,4dfda98a0265e46c,b2d3d190a26641d2,false] 1487 --- [http-nio-9090-exec-2] c.netflix.config.ChainedDynamicProperty  : Flipping property: resilience.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-07-09 15:42:35.502  INFO [resilience,4dfda98a0265e46c,b2d3d190a26641d2,false] 1487 --- [http-nio-9090-exec-2] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client resilience initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=resilience,current list of Servers=[172.17.1.40:9090],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:172.17.1.40:9090;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 05:30:00 IST 1970;	First connection made: Thu Jan 01 05:30:00 IST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@44520364
+2018-07-09 15:42:36.485  INFO [resilience,,,] 1487 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: resilience.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-07-09 15:43:55.173  INFO [resilience,,,] 1487 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-07-09 15:43:55.186  INFO [resilience,,,] 1487 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f89292e: startup date [Mon Jul 09 15:42:24 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767
+2018-07-09 15:43:55.188  INFO [resilience,,,] 1487 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application resilience with eureka with status DOWN
+2018-07-09 15:43:55.188  WARN [resilience,,,] 1487 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1531131235188, current=DOWN, previous=UP]
+2018-07-09 15:43:55.189  INFO [resilience,,,] 1487 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESILIENCE/172.17.1.40:resilience:9090: registering service...
+2018-07-09 15:43:55.191  INFO [resilience,,,] 1487 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-07-09 15:43:55.192  INFO [resilience,,,] 1487 --- [RMI TCP Connection(2)-127.0.0.1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@4959dbe1: startup date [Mon Jul 09 15:42:35 IST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f89292e
+2018-07-09 15:43:55.196  INFO [resilience,,,] 1487 --- [RMI TCP Connection(2)-127.0.0.1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook removed for: NFLoadBalancer-PingTimer-resilience
+2018-07-09 15:43:55.198  INFO [resilience,,,] 1487 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESILIENCE/172.17.1.40:resilience:9090 - registration status: 204
+2018-07-09 15:43:55.200  INFO [resilience,,,] 1487 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-09 15:43:55.200  INFO [resilience,,,] 1487 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-07-09 15:43:55.208  INFO [resilience,,,] 1487 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-07-09 15:43:55.211  WARN [resilience,,,] 1487 --- [RMI TCP Connection(2)-127.0.0.1] .s.c.a.CommonAnnotationBeanPostProcessor : Invocation of destroy method failed on bean with name 'scopedTarget.eurekaClient': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2018-07-09 15:43:55.269  INFO [resilience,,,] 1487 --- [RMI TCP Connection(2)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-07-09 15:43:55.272  INFO [resilience,,,] 1487 --- [localhost-startStop-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-07-09 15:43:55.282  WARN [resilience,,,] 1487 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:43:55.283  WARN [resilience,,,] 1487 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DataPublisher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:43:55.284  WARN [resilience,,,] 1487 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxScheduledExecutorPool-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:43:55.285  WARN [resilience,,,] 1487 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxScheduledExecutorPool-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:43:55.286  WARN [resilience,,,] 1487 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:43:55.286  WARN [resilience,,,] 1487 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxComputationScheduler-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2117)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:43:55.287  WARN [resilience,,,] 1487 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@10.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2075)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
+ java.base@10.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.1/java.lang.Thread.run(Thread.java:844)
+2018-07-09 15:43:55.302  INFO [resilience,,,] 1487 --- [Thread-9] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater

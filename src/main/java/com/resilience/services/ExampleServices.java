@@ -1,3 +1,4 @@
+
 package com.resilience.services;
 
 import java.util.List;
@@ -17,7 +18,8 @@ import com.resilience.exception.UserException;
 import com.resilience.manager.user.UserManager;
 import com.resilience.utils.Utilities;
 
-@RestController("/user")
+@RestController
+@RequestMapping("/user")
 public class ExampleServices {
 
 	private static final Logger log = LoggerFactory.getLogger(ExampleServices.class.getName());
@@ -54,7 +56,8 @@ public class ExampleServices {
 	@RequestMapping(value = "/listByProxy", method = RequestMethod.GET, produces = "application/json")
 	public ObjectNode getUsersThroughProxy() {
 		log.debug("Calling user service");
-		ObjectNode response = restTemplate.getForObject("http://resilienceApp/user/list", ObjectNode.class);
+		ObjectNode response = restTemplate.getForObject("http://resilience/user/list", ObjectNode.class);
+		response.put("Proxy", "YES");
 		return response;
 	}
 

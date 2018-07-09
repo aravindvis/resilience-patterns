@@ -1,0 +1,82 @@
+2018-07-09 14:49:57.471  INFO [resilenceApp,,,] 1381 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767: startup date [Mon Jul 09 14:49:57 IST 2018]; root of context hierarchy
+2018-07-09 14:49:57.869  INFO [resilenceApp,,,] 1381 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 14:49:57.909  INFO [resilenceApp,,,] 1381 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a56ea52d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 14:49:58.387  INFO [resilenceApp,,,] 1381 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2018-07-09 14:49:58.494  WARN [resilenceApp,,,] 1381 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/resilenceApp/dev": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+2018-07-09 14:49:58.498  INFO [resilenceApp,,,] 1381 --- [main] c.r.ResiliencePatternsApplication        : The following profiles are active: dev
+2018-07-09 14:49:58.530  INFO [resilenceApp,,,] 1381 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20749d9: startup date [Mon Jul 09 14:49:58 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767
+2018-07-09 14:49:59.606  INFO [resilenceApp,,,] 1381 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=67b30ddf-7f53-374f-bbdd-5243c07e3822
+2018-07-09 14:49:59.623  INFO [resilenceApp,,,] 1381 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 14:50:00.028  INFO [resilenceApp,,,] 1381 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a56ea52d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 14:50:00.610  INFO [resilenceApp,,,] 1381 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2018-07-09 14:50:00.635  INFO [resilenceApp,,,] 1381 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-09 14:50:00.635  INFO [resilenceApp,,,] 1381 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-09 14:50:00.748  INFO [resilenceApp,,,] 1381 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-09 14:50:00.749  INFO [resilenceApp,,,] 1381 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2219 ms
+2018-07-09 14:50:01.083  INFO [resilenceApp,,,] 1381 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-09 14:50:01.084  INFO [resilenceApp,,,] 1381 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'traceFilter' to: [/*]
+2018-07-09 14:50:01.084  INFO [resilenceApp,,,] 1381 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-09 14:50:01.084  INFO [resilenceApp,,,] 1381 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-09 14:50:01.084  INFO [resilenceApp,,,] 1381 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-09 14:50:01.085  INFO [resilenceApp,,,] 1381 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-09 14:50:01.163  WARN [resilenceApp,,,] 1381 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name '/user': Unsatisfied dependency expressed through field 'userImpl'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.resilience.manager.user.UserManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-07-09 14:50:01.164  INFO [resilenceApp,,,] 1381 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-07-09 14:50:01.190  INFO [resilenceApp,,,] 1381 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-07-09 14:50:01.397 ERROR [resilenceApp,,,] 1381 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userImpl in com.resilience.services.ExampleServices required a bean of type 'com.resilience.manager.user.UserManager' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.resilience.manager.user.UserManager' in your configuration.
+
+2018-07-09 14:51:17.985  INFO [resilenceApp,,,] 1382 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767: startup date [Mon Jul 09 14:51:17 IST 2018]; root of context hierarchy
+2018-07-09 14:51:18.416  INFO [resilenceApp,,,] 1382 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 14:51:18.456  INFO [resilenceApp,,,] 1382 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7dd74407] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 14:51:18.782  INFO [resilenceApp,,,] 1382 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2018-07-09 14:51:18.887  WARN [resilenceApp,,,] 1382 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/resilenceApp/dev": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+2018-07-09 14:51:18.890  INFO [resilenceApp,,,] 1382 --- [main] c.r.ResiliencePatternsApplication        : The following profiles are active: dev
+2018-07-09 14:51:18.920  INFO [resilenceApp,,,] 1382 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f89292e: startup date [Mon Jul 09 14:51:18 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1991f767
+2018-07-09 14:51:19.898  INFO [resilenceApp,,,] 1382 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2e2840fc-a00e-3bc3-84a6-17ee5a3f7dc0
+2018-07-09 14:51:19.916  INFO [resilenceApp,,,] 1382 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 14:51:20.276  INFO [resilenceApp,,,] 1382 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7dd74407] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 14:51:20.769  INFO [resilenceApp,,,] 1382 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2018-07-09 14:51:20.807  INFO [resilenceApp,,,] 1382 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-09 14:51:20.807  INFO [resilenceApp,,,] 1382 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-09 14:51:20.935  INFO [resilenceApp,,,] 1382 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-09 14:51:20.936  INFO [resilenceApp,,,] 1382 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2016 ms
+2018-07-09 14:51:21.326  INFO [resilenceApp,,,] 1382 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-09 14:51:21.327  INFO [resilenceApp,,,] 1382 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'traceFilter' to: [/*]
+2018-07-09 14:51:21.327  INFO [resilenceApp,,,] 1382 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-09 14:51:21.327  INFO [resilenceApp,,,] 1382 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-09 14:51:21.328  INFO [resilenceApp,,,] 1382 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-09 14:51:21.328  INFO [resilenceApp,,,] 1382 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-09 14:51:21.431  WARN [resilenceApp,,,] 1382 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name '/user': Unsatisfied dependency expressed through field 'restTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-07-09 14:51:21.433  INFO [resilenceApp,,,] 1382 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-07-09 14:51:21.460  INFO [resilenceApp,,,] 1382 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-07-09 14:51:21.668 ERROR [resilenceApp,,,] 1382 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field restTemplate in com.resilience.services.ExampleServices required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
