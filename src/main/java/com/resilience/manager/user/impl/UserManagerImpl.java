@@ -1,6 +1,5 @@
 package com.resilience.manager.user.impl;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -23,19 +22,29 @@ public class UserManagerImpl implements UserManager {
 	}
 
 	/**
-	 * Circuit Breaker Pattern Implemented with the following properties 
-	 * - Latency is 2000 ms (2 seconds) 
+	 * Circuit Breaker Pattern Implemented with the following properties - Latency
+	 * is 2000 ms (2 seconds) 
 	 * - Circuit can be close check in 20000 ms (20 seconds)
-	 * - Error threshold for circuit to open - 10% 
-	 * - Fallback methood - getAllUsersFallback. Please note that the method should have the exact signature
+	 * - Error threshold for circuit to open - 50% - Fallback method -
+	 * getAllUsersFallback. Please note that the method should have the exact
+	 * signature 
 	 * - Threadpool key for bulkhead = userThreadPool
 	 */
 	@Override
 	@HystrixCommand(commandProperties = {
-			@HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "2000"),
-			@HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "20000"),
-			@HystrixProperty(name = "circuitBreaker.errorThresholdPercentage", value = "10") }, fallbackMethod = "getAllUsersFallback", threadPoolKey = "userThreadPool", ignoreExceptions = {
-					IOException.class })
+											@HystrixProperty(name = "circuitBreaker.errorThresholdPercentage", value = "50"),
+											@HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value="3"),
+											@HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "20000"),
+											@HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "2000")}, 
+					fallbackMethod = "getAllUsersFallback", 
+					threadPoolKey = "userThreadPool", 
+					threadPoolProperties = {
+												@HystrixProperty(name = "coreSize", value = "30"),
+												@HystrixProperty(name = "maximumSize",value="50"),
+												@HystrixProperty(name = "allowMaximumSizeToDivergeFromCoreSize", value="true"),
+												@HystrixProperty(name="maxQueueSize", value="20")
+										   }, 
+					ignoreExceptions = { UserException.class })
 	public List<User> getAllUsers() throws UserException {
 		log.debug("Entering method getAllUsers");
 
@@ -52,6 +61,7 @@ public class UserManagerImpl implements UserManager {
 			user = new User(4, "Fourth", "User", "Fourth Engineer");
 			userList.add(user);
 			if (shouldSleep()) {
+				log.debug("Going to sleep for 3 seconds");
 				Thread.sleep(3000);
 			}
 		} catch (Exception ex) {
@@ -64,7 +74,7 @@ public class UserManagerImpl implements UserManager {
 
 	@Override
 	public User getUserById(long id) throws UserException {
-		log.debug("Entering metho getUserById");
+		log.debug("Entering method getUserById");
 
 		User user = null;
 		if (id >= 0) {
@@ -75,11 +85,12 @@ public class UserManagerImpl implements UserManager {
 	}
 
 	public List<User> getAllUsersFallback() throws UserException {
+		log.debug("Entering the getAllUsersFallback method");
 		User user = null;
 		List<User> userList = new ArrayList<>();
 
 		try {
-			user = new User(1, "First", "User", "First Engineer Fallback");
+			user = new User(1, "First", "User", "First Engineer, Fallback");
 			userList.add(user);
 			user = new User(2, "Second", "User", "Second Engineer, Fallback");
 			userList.add(user);
@@ -91,6 +102,7 @@ public class UserManagerImpl implements UserManager {
 			log.debug("Exception occured in fallback processing as well");
 			throw new UserException("E9998", "Erorr occured");
 		}
+		log.debug("Exit from getAllUsersFallback method");
 		return userList;
 	}
 

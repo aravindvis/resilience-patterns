@@ -57,20 +57,23 @@ public class User implements Serializable {
 		if (accessLevel == null) {
 			if (other.accessLevel != null)
 				return false;
-		} else if (!accessLevel.equals(other.accessLevel))
+		} else if (!accessLevel.equals(other.accessLevel)) {
 			return false;
+		}
 		if (userFName == null) {
 			if (other.userFName != null)
 				return false;
-		} else if (!userFName.equals(other.userFName))
+		} else if (!userFName.equals(other.userFName)) {
 			return false;
+		}
 		if (userId != other.userId)
 			return false;
 		if (userLName == null) {
 			if (other.userLName != null)
 				return false;
-		} else if (!userLName.equals(other.userLName))
+		} else if (!userLName.equals(other.userLName)) {
 			return false;
+		}
 		return true;
 	}
 

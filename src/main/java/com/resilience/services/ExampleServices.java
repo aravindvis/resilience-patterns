@@ -3,6 +3,8 @@ package com.resilience.services;
 
 import java.util.List;
 
+import javax.ws.rs.core.MediaType;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +32,7 @@ public class ExampleServices {
 	@Autowired
 	private RestTemplate restTemplate;
 
-	@RequestMapping(value = "/list", method = RequestMethod.GET, produces = "application/json")
+	@RequestMapping(value = "/list", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON)
 	public ObjectNode getUsers() throws UserException {
 		log.debug("Inside getUsers by /list method");
 		List<User> listAllUsers = null;
@@ -42,7 +44,7 @@ public class ExampleServices {
 		} catch (UserException ex) {
 			throw ex;
 		} catch (Exception ex) {
-			throw new UserException("E9999", "Errorr Code");
+			throw new UserException("E9999", "ERROR OCCURRED PROCESSING REQUEST");
 		}
 		response.put("STATUS", "SUCCESS");
 		response.putArray("users").addAll(userList);
@@ -53,7 +55,7 @@ public class ExampleServices {
 	 * Calling of external service through Ribbon client. We are simulating external
 	 * service by calling another service.
 	 */
-	@RequestMapping(value = "/listByProxy", method = RequestMethod.GET, produces = "application/json")
+	@RequestMapping(value = "/listByProxy", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON)
 	public ObjectNode getUsersThroughProxy() {
 		log.debug("Calling user service");
 		ObjectNode response = restTemplate.getForObject("http://resilience/user/list", ObjectNode.class);
